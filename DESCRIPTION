@@ -1,0 +1,14 @@
+Package: Template
+Title: Provides a place to hold Rmarkdown templates from Kevin.
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Kevin",
+           family = "Gilds",
+           role = c("aut"),
+           email = "kevin.gilds@hey.com",
+Description: This package serves a place holder for Rmarkdown templates specificall for blog posts and Get REAL!.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
