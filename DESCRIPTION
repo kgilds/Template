@@ -4,8 +4,8 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Kevin",
            family = "Gilds",
-           role = c("aut"),
-           email = "kevin.gilds@hey.com",
+           role = c("cre", "aut"),
+           email = "kevin.gilds@hey.com")
 Description: This package serves a place holder for Rmarkdown templates specificall for blog posts and Get REAL!.
 License: MIT + file LICENSE
 Encoding: UTF-8
