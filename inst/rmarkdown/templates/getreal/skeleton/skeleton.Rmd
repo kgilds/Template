@@ -1,0 +1,37 @@
+---
+title: "Get REAL!"
+author: "Kevin Gilds, MPA"
+date: "`r Sys.Date()`"
+lof: yes
+lot: yes
+output:
+  pagedown::book_crc:
+    toc: yes
+    front_cover: 
+    self_contained: no
+    toc: yes
+paged-footnotes: yes
+shorttitle: 
+subtitle: 
+toc-title: Contents
+bibliography:
+- get_real.json
+- packages.bib
+biblio-style: apalike
+css:
+  - getreal2.css
+knit: pagedown::chrome_print
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Adding an RMarkdown Template
+
+This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires.
+
+This is a good place to demonstrate special features that your template provides. Ideally it should knit out-of-the-box, or at least contain clear instructions as to what needs changing.
+
+Finally, be sure to remove this message!

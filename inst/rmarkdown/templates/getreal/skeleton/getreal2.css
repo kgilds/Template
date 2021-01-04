@@ -1,0 +1,97 @@
+/* page size */
+@page {
+  size: 6in 9in;
+}
+
+
+
+
+
+/* store some string variables */
+.shorttitle1 {
+  string-set: h3-text content(text);
+}
+
+.shorttitle2 {
+  string-set: h3-text content(text);
+}
+
+/* left page */
+.running-h3-title {
+  position: running(running-h3-titleTitle);
+  width: var(--running-title-width);
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.running-h3-title:before {
+  content: string(h3-text);
+}
+
+@page :first {
+  @top-left {
+    content: none;
+  }
+  @top-right {
+    content: none;
+  }
+  @bottom-right {
+    content: none !important;
+  }
+  background-image: var(--front-cover);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@page :left {
+  @top-left {
+    content: counter(page);
+  }
+}
+
+@page :right {
+  @top-right {
+    content: counter(page);
+  }
+}
+
+/* Front cover */
+.front-cover {
+  break-after: page;
+}
+
+/* page breaks; aka CSS fragmentation */
+.level1 {
+  break-before: page;
+}
+.section > h1, .section > h2, .section > h3, .section > h4, .section > h5, .section > h6 {
+  break-after: avoid;
+}
+.footnotes {
+  break-before: always;
+  break-after: always;
+}
+.figure {
+  break-inside: avoid;
+}
+
+/* do not break captions */
+caption {
+  break-inside: avoid;
+  break-after: avoid;
+}
+
+body {
+  font-family: "Trebuchet MS";
+  font-size: 11pt;
+  line-height: 175%;
+}
+TOC {
+  line-height: 50%;
+}
+h1 {
+  font-size: 14pt;
+}
+h2 {
+  font-size: 12pt;
+}
